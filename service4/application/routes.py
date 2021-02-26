@@ -11,25 +11,25 @@ def build():
     elif month == "2":
         build = "You need sun. WHy don't you go somewhere hot and shiny?"
     elif month == "3":
-        build = 'Mages who specialize in manipulating minds, altering perceptions of friend and foe alike.'
+        build = 'Drink cocktail.'
     elif month == "4":
-        build = 'Quiet killers, these types attack from the shadows against unsuspecting prey.'
+        build = 'Enjoy Flower'
     elif month == "5":
-        build = 'Characters skilled in the crafting and use of powerful potions and deadly poisons.'
+        build = 'Enjoy sun.'
     elif month == "6":
-        build = 'Mages who work from the shadows, using stealth to supplement their magical abilities.'
-    elif month == "7:
-        build = 'Brutish, aggressive fighters who prefer an overwhelming offense over a cautious defense.'
+        build = 'Enjoy sun'
+    elif month == "7":
+        build = 'Enjoy beach.'
     elif month == "8":
-        build = 'Tough, resiliant characters covered head to toe in nigh impenetrable heavy armor.'
+        build = 'Swimming.'
     elif month == "9":
-        build = 'Tough, resiliant characters covered head to toe in nigh impenetrable heavy armor.'
+        build = 'Autumn.'
     elif month == "10":
-        build = 'Tough, resiliant characters covered head to toe in nigh impenetrable heavy armor.'
+        build = 'Autumn.'
     elif month == "11":
-        build = 'Tough, resiliant characters covered head to toe in nigh impenetrable heavy armor.'
+        build = 'November'
     elif month == "12":
-        build = 'Tough, resiliant characters covered head to toe in nigh impenetrable heavy armor.'
+        build = 'December'
     else:
         build = "Build not compatible"
 

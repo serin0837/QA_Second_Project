@@ -4,16 +4,18 @@ import requests
 from application.models import Travel
 from application import app, db
 
+db.create_all()
+
 @app.route('/', methods=['GET', 'POST'])
 @app.route('/home', methods=['GET', 'POST'])
 def gen():
     #change uri
-    country_response = requests.get("http://character-gen_service2:5000/race")
-    month_response = requests.get("http://character-gen_service3:5000/player_class")
-    build_response = requests.post("http://character-gen_service4:5000/build", data = month_response.text)
+    country_response = requests.get("http://35.197.49.49:5001/country")
+    month_response = requests.get("http://35.197.49.49:5002/month")
+    build_response = requests.post("http://35.197.49.49:5003/build", data = month_response.text)
     
     new_build = Travel(country = country_response.text, month = month_response.text, build = build_response.text)
     db.session.add(new_build)
     db.session.commit()
 
-    return render_template('index.html', country=country.text, month=month.text, build=build_response.text)
+    return render_template('index.html', country=country_response.text, month=month_response.text, build=build_response.text)

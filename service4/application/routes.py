@@ -6,30 +6,30 @@ from application import app
 def build():
     month = request.data.decode('utf-8')
     # change logic here
-    if month == "1":
-        build = "You need sun. WHy don't you go somewhere hot and shiny?"
-    elif month == "2":
-        build = "You need sun. WHy don't you go somewhere hot and shiny?"
-    elif month == "3":
-        build = 'Drink cocktail.'
-    elif month == "4":
-        build = 'Enjoy Flower'
-    elif month == "5":
-        build = 'Enjoy sun.'
-    elif month == "6":
-        build = 'Enjoy sun'
-    elif month == "7":
-        build = 'Enjoy beach.'
-    elif month == "8":
-        build = 'Swimming.'
-    elif month == "9":
-        build = 'Autumn.'
-    elif month == "10":
-        build = 'Autumn.'
-    elif month == "11":
-        build = 'November'
-    elif month == "12":
-        build = 'December'
+    if month == "January":
+        build = "enjoy sun"
+    elif month == "February":
+        build = "enjoy sun"
+    elif month == "March":
+        build = "enjoy flower"
+    elif month == "April":
+        build = "enjoy flower"
+    elif month == "May":
+        build = "love your partner more"
+    elif month == "June":
+        build = "surfing"
+    elif month == "July":
+        build = "camping"
+    elif month == "August":
+        build = "birthday party"
+    elif month == "September":
+        build = "read a lot"
+    elif month == "October":
+        build = "drink beer a lot"
+    elif month == "November":
+        build = "look back your year"
+    elif month == "December":
+        build = "enjoy your life"
     else:
         build = "Build not compatible"
 

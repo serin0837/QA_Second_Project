@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Travel Generator</title>
     <style>
         body {
-          background-color: LightSalmon;
+          background-color: #eee;
         }
     </style>
 </head>
-<body>
-    <h1>Welcome to TES Character Generator</h1>
-    <h2>Refresh to generate a Skyrim Character Build</h2>
-    <h3>Country: {{ country }}</h3>
-    <h3>Month: {{ month }}</h3>
-    <h3>Build: {{ build }}</h3>
-<hr></hr>
-<h2> Your new place to go is: {{ country }} - {{ month }} </h2>
+<body class="text-center">
+    <h1>Welcome to your travel generator✈️</h1>
+    <p>Refresh to generate a your travel.</p>
+    <ul>
+        <li>Country: {{ country }}</li>
+        <li>Month: {{ month }}</li>
+        <li>To do: {{ build }}</li>
+    </ul>
+    <h2> 👉🏻 Your new country to go: {{ country }} on {{ month }}, you have to {{ build }}. </h2>
 </body>
 </html>

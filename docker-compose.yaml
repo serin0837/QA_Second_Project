@@ -1,0 +1,38 @@
+version: "3"
+
+services:
+  service1:
+    container_name: service1
+    image: serin0837/service1:latest
+    build: ./service1
+    deploy:
+      replicas: 3 
+    ports:
+    - "5000:5000"
+
+  service2:
+    container_name: service2
+    image: serin0837/service2:latest
+    build: ./service2
+    deploy:
+      replicas: 3 
+    ports:
+    - "5001:5001"
+
+  service3:
+    container_name: service3
+    image: serin0837/service3:latest
+    build: ./service3
+    deploy:
+      replicas: 3 
+    ports:
+    - "5002:5002"
+
+  service4:
+    container_name: service4
+    image: serin0837/service4:latest
+    build: ./service4
+    deploy:
+      replicas: 3 
+    ports:
+    - "5003:5003"

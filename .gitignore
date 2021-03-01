@@ -1,0 +1,9 @@
+/service1/venv
+/service1/.coverage
+/service2/.coverage
+/service3/.coverage
+/service4/.coverage
+/service4/.pytest_cache
+/service3/.pytest_cache
+/service2/.pytest_cache
+/service1/.pytest_cache

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="0" failures="2" hostname="instance-1" name="pytest" skipped="0" tests="2" time="0.618" timestamp="2021-03-01T11:23:52.994297"><testcase classname="tests.test_service1.TestGenerator" name="testGen" time="0.003"><failure message="NotImplementedError">self = &lt;tests.test_service1.TestGenerator testMethod=testGen&gt;, result = &lt;TestCaseFunction testGen&gt;
+
+    def __call__(self, result=None):
+        """
+        Does the required setup, doing it here
+        means you don't have to call super.setUp
+        in subclasses.
+        """
+        try:
+&gt;           self._pre_setup()
+
+venv/lib/python3.6/site-packages/flask_testing/utils.py:136: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+venv/lib/python3.6/site-packages/flask_testing/utils.py:149: in _pre_setup
+    self.app = self.create_app()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;tests.test_service1.TestGenerator testMethod=testGen&gt;
+
+    def create_app(self):
+        """
+        Create your Flask app here, with any
+        configuration you need.
+        """
+&gt;       raise NotImplementedError
+E       NotImplementedError
+
+venv/lib/python3.6/site-packages/flask_testing/utils.py:127: NotImplementedError</failure></testcase><testcase classname="tests.test_service1.TestResponse" name="testIndex" time="0.001"><failure message="NotImplementedError">self = &lt;tests.test_service1.TestResponse testMethod=testIndex&gt;, result = &lt;TestCaseFunction testIndex&gt;
+
+    def __call__(self, result=None):
+        """
+        Does the required setup, doing it here
+        means you don't have to call super.setUp
+        in subclasses.
+        """
+        try:
+&gt;           self._pre_setup()
+
+venv/lib/python3.6/site-packages/flask_testing/utils.py:136: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+venv/lib/python3.6/site-packages/flask_testing/utils.py:149: in _pre_setup
+    self.app = self.create_app()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;tests.test_service1.TestResponse testMethod=testIndex&gt;
+
+    def create_app(self):
+        """
+        Create your Flask app here, with any
+        configuration you need.
+        """
+&gt;       raise NotImplementedError
+E       NotImplementedError
+
+venv/lib/python3.6/site-packages/flask_testing/utils.py:127: NotImplementedError</failure></testcase></testsuite></testsuites>

@@ -3,14 +3,14 @@ all:
   children:
     jenkins:
       hosts:
-        35.197.65.166:
+        34.82.232.53:
     manager:
       hosts:      
-        34.105.75.14:
+        35.197.49.49:
     worker:
       hosts:
-        34.82.45.155:
+        34.82.32.219:
   vars:
     ansible_python_interpreter: /usr/bin/python3
-    ansible_user: jenkins
+    ansible_user: serinjeon
     ansible_ssh_private_key_file: '~/.ssh/id_rsa'

@@ -31,7 +31,6 @@ pipeline{
         stage('Build'){
             steps{
                 sh ''' 
-                sudo chmod 666 /var/run/docker.sock
                 docker-compose down --rmi all
                 docker-compose build
                 sudo docker login -u serin0837 -p password1234

@@ -12,5 +12,5 @@ all:
         34.82.32.219:
   vars:
     ansible_python_interpreter: /usr/bin/python3
-    ansible_user: serinjeon
+    ansible_user: jenkins
     ansible_ssh_private_key_file: '~/.ssh/id_rsa'

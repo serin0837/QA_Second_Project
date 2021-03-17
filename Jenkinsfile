@@ -30,8 +30,8 @@ pipeline{
         }
         stage('Build'){
             steps{
-                sh ''' 
-                docker-compose down --rmi all
+                sh '''
+                ls -la
                 docker-compose build
                 sudo docker login -u serin0837 -p password1234
                 sudo docker-compose push
